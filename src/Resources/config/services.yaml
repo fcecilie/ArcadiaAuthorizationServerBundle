@@ -1,0 +1,12 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+        bind:
+            $arcadiaAuthorizationKeysPath: '%arcadia_authorization.keys_path%'
+            $arcadiaAuthorizationServers: '%arcadia_authorization.servers%'
+
+    Arcadia\Bundle\AuthorizationBundle\:
+        resource: '../../*'
+        exclude: '../../{DependencyInjection,Resources,ArcadiaAuthorizationBundle.php}'

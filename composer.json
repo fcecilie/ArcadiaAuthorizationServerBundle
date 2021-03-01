@@ -1,0 +1,30 @@
+{
+    "name": "arcadia/authorization-bundle",
+    "description": "A symfony bundle to encrypt communications between applications.",
+    "type": "symfony-bundle",
+    "keywords": ["authorization", "encryption"],
+    "homepage": "https://github.com/fcecilie/ArcadiaAuthorizationBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Flavian",
+            "email": "fcecilien@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Arcadia\\Bundle\\AuthorizationBundle\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4",
+        "ext-openssl": "^7.4",
+        "doctrine/annotations": "^1.12",
+        "symfony/dependency-injection": "^5.2",
+        "symfony/config": "^5.2",
+        "symfony/http-foundation": "^5.2",
+        "symfony/security-bundle": "^5.2",
+        "symfony/console": "^5.2",
+        "doctrine/orm": "^2.8"
+    }
+}
